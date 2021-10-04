@@ -17,18 +17,47 @@ ZoomMtg.i18n.reload('en-US');
 })
 export class AppComponent implements OnInit {
   signatureEndpoint = 'http://localhost:3000';
-  apiKey = 'y0eY3UHBTD6yOSLAojpxsg';
-  meetingNumber = '4834506210';
+  apiKey = '_4T6qvC7QdKgOurpoF7pzA';
+  meetingNumber = '91988076920';
   role = 0;
   leaveUrl = 'http://localhost:4200';
-  userName = 'Angular';
+  userName = 'Amine Bouza';
   userEmail = '';
-  passWord = '';
+  passWord = '301006';
   registrantToken = '';
 
-  constructor(public httpClient: HttpClient, @Inject(DOCUMENT) document) {}
+  /**
+   
 
-  ngOnInit() {}
+Join Zoom Meeting
+https://zoom.us/j/91988076920?pwd=aytRYTI0djQ2Z08rQ0NFSExYSEhGUT09
+
+Meeting ID: 919 8807 6920
+Passcode: 301006
+One tap mobile
++16699006833,,91988076920#,,,,*301006# US (San Jose)
++19292056099,,91988076920#,,,,*301006# US (New York)
+
+Dial by your location
+        +1 669 900 6833 US (San Jose)
+        +1 929 205 6099 US (New York)
+        +1 253 215 8782 US (Tacoma)
+        +1 301 715 8592 US (Washington DC)
+        +1 312 626 6799 US (Chicago)
+        +1 346 248 7799 US (Houston)
+Meeting ID: 919 8807 6920
+Passcode: 301006
+Find your local number: https://zoom.us/u/abAaVZ04hs
+
+
+
+
+
+   */
+
+  constructor(public httpClient: HttpClient, @Inject(DOCUMENT) document) { }
+
+  ngOnInit() { }
 
   getSignature() {
     this.httpClient
